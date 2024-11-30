@@ -16,7 +16,7 @@ public class GithubTests {
     }
 
     @Test
-    void enterprisePage() {
+    void enterprisePageTest() {
         open("https://github.com/");
         $(".HeaderMenu-wrapper").$(byText("Solutions")).hover();
         $(byTagAndText("a", "Enterprises")).click();
